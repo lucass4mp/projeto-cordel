@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: 'Passion One', sans-serif;
+  --fonte3: 'Fresca', sans-serif;
+}
+
+section > prep{
+   white-space: pre-line;
+  }
+
+* {
+   margin: 0px;
+   padding: 0px;
+   font-size: 1em;
+ }
+
+html, body {
+   min-height: 100vh;
+   background-color: darkgray;
+   font-family: var(--fonte1);
+   }
+
+header {
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+  text-align: center;
+  font-family: var(--fonte2);
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-size: 9vw;
+  
+}
+
+header > p {
+  padding-bottom: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section{
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+   line-height: 2em;
+   padding-left: 30px;
+   font-family: var(--fonte3);
+   font-weight: 600;
+   font-size: 3.5vw;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+section.imagem {
+  background-color: rgba(0, 0, 0, 0.507);
+  color: white;
+  box-shadow: inset 6px 6px 13px 0pc rgba(0, 0, 0, 0.397);
+  background-attachment: fixed;
+}
+
+section.imagem > p {
+   display: inline-block;
+   padding: 5px;
+   background-color: rgba(0, 0, 0, 0.356);
+   text-shadow: 1px 1px 0px black;
+}
+
+
+section#img01 {
+    background-image: url(../imagens/abelha.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../imagens/folha01.jpg);
+    background-size: cover;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.863);
+  color: white;
+  padding: 1px;
+  margin: 1px;
+  text-align: center;
+}
